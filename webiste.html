@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amisha Fitness Gym</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <style>
+      /* CSS Reset */
+      body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(img/luis-vidal-FodEsaNZs48-unsplash.jpg);
+        background-size: 1280px;
+      }
+      .left {
+        color: #dccbe5;
+        /* border: 2px solid red; */
+        position: absolute;
+        top: 11px;
+        left: 62px;
+        display: inline-block;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .left img {
+        width: 106px;
+        /* filter: invert(1);  */
+        /* invert used in case to change the image appearance, for example if we have any image with black colour and our background of the body is also black then it that case instead of using photoshop we can simply use css 'invert' function to apply the filter.  */
+        margin: auto 16px;
+      }
+      .left div {
+        text-align: center;
+        line-height: 0px;
+      }
+      .mid {
+        /* border: 2px solid green; */
+        display: block;
+        width: 37%;
+        margin: 20px auto;
+      }
+      .navbar {
+        display: inline-block;
+      }
+      .navbar li {
+        display: inline-block;
+      }
+      .navbar li a {
+        color: white;
+        display: inline-block;
+        text-decoration: none;
+        padding: 0px 23px;
+        margin: -4px -17px;
+        font-size: 21px;
+        font-family: "Lobster", cursive;
+      }
+      .navbar li a:hover,
+      .navbar li a.active {
+        color: rgb(148, 209, 228);
+        text-decoration: underline;
+      }
+      .right {
+        /* border: 2px solid yellow; */
+        position: absolute;
+        top: 20px;
+        right: 34px;
+        display: inline-block;
+      }
+      .btn {
+        margin: 8px 18px;
+        padding: 7px;
+        color: white;
+        background-color: transparent;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+        width: 110px;
+        text-align: center;
+      }
+      .btn:hover {
+        background-color: gray;
+      }
+      .container {
+        border: 2px solid white;
+        border-radius: 12px;
+        margin: 80px 61px;
+        padding: 6px 32px;
+        width: 36%;
+        font-size: 13px;
+      }
+      .formgroup input{
+        text-align:center ;
+        display: block;
+        margin: 21px 21px;
+        padding: 5px 28px;
+        font-size: 16px;
+        width: 303px;
+        font-family: 'Play', sans-serif;
+        border-radius: 10px;
+      }
+      #address{
+        text-align:center ;
+        display: block;
+        margin: 21px 21px;
+        padding: 5px 28px;
+        font-size: 16px;
+        width: 303px;
+        height: 69px;
+        font-family: 'Play', sans-serif;
+        border-radius: 10px;
+      }
+      .footer li{
+          display: inline-block;
+          margin: 0px 124px;
+          font-size: 19px;
+      }
+      .footer li .git:hover{
+            cursor: pointer;
+            backg#
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <!-- left div for logo -->
+      <div class="left">
+        <img src="img/barbel-1799666_1280.png" alt="" />
+        <div>Amisha Fitness Gym</div>
+      </div>
+      <!-- mid div for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li>
+            <a href="#" target="_blank" class="active">Home</a>
+          </li>
+          <li><a href="#" target="_blank">About Us</a></li>
+          <li><a href="#" target="_blank">Excercises</a></li>
+          <li><a href="#" target="_blank">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- right div for buttons -->
+      <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email-Us</button>
+      </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym In The Town</h1>
+        <hr>
+        <br>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <strong style="font-size:15px;">NAME:</strong> <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="formgroup">
+               <strong style="font-size:15px;">EMAIL-ADDRESS:</strong> <input type="email" name="" placeholder="Enter your email-address">
+            </div>
+            <div class="formgroup">
+               <strong style="font-size:15px;">DATE-OF-BIRTH:</strong> <input type="date" name="" placeholder="Date of Birth">
+            </div>
+            <div class="formgroup">
+                <strong style="font-size:15px;">ADDRERSS: </strong>
+                <textarea name="Enter your address" id="address" cols="30" rows="10" placeholder="Enter your address"></textarea>
+            </div>
+            <div class="btn">
+                <input type="button" value="SUBMIT" style="border: 0px; background-color: black; color: white; justify-content: center; align-items: center; display: block; margin: auto;">
+            </div>
+            <div class="btn">
+                <input type="reset" value="RESET" style="border: 0px; background-color: black; color: white; justify-content: center; align-items: center; display: block; margin: auto;">
+            </div>
+        </form>
+    </div>
+        <hr>
+        <footer class="footer">
+        <div class="bottom">
+            <ul>
+                <li>Created using HTML and CSS only</li>
+                <li><a href="https://github.com/amisha0-0" target="_blank" style="color: white;" class="git">Github</a></li>
+                <li><a class="copy" style="color: rgb(148, 209, 228);">&copy; AMISHA</a></li>
+            </ul>
+        </div>   
+        </footer>     
+    
+  </body>
+</html>
